@@ -100,11 +100,35 @@ function wprealizer_block_theme_setup() {
 		)
 	);
 
-	
+	/**
+	 * Block theme supports
+ 	*/
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'editor-style.css' );
-
 	add_theme_support( 'responsive-embeds' );
+
+	// color pala
+	add_theme_support( 'editor-color-palette', [
+			[
+				'name' => esc_attr__( 'Strong magenta', 'wprealizer' ),
+				'slug' => 'strong-magenta',
+				'color' => '#a156b4',
+			],
+			[
+				'name'  => esc_attr__( 'light grayish magenta', 'wprealizer' ),
+				'slug'  => 'light-grayish-magenta',
+				'color' => '#d0a5db',
+			],
+			[
+				'name'  => esc_attr__( 'light white', 'wprealizer' ),
+				'slug'  => 'light-white',
+				'color' => '#FBFBFB',
+			],
+		]		
+	);
+	
+	add_theme_support( 'custom-line-height' );
+	add_theme_support( 'custom-spacing' );
 }
 add_action( 'after_setup_theme', 'wprealizer_block_theme_setup' );
 

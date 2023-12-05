@@ -975,3 +975,9 @@ textarea {
 body{
 	background-color: #e6e6e6;
 }
+.has-strong-magenta-background-color{
+	background-color: #a156b4;
+}
+.has-light-white-color{
+	color: #FBFBFB;
+}
